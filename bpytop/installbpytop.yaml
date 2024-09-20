@@ -1,0 +1,11 @@
+---
+- hosts: dietpi
+  become: true
+  
+  gather_facts: true
+
+  tasks:
+  - name: Install bpytop
+    apt: 
+      name: bpytop
+      state: latest 
